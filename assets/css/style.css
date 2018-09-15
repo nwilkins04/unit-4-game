@@ -24,16 +24,20 @@ body {
     background-color: blue;
     width: 20%;
     color: white;
+    font-size: 30px;;
 }
 
 #score {
     background-color: purple;
     font-size: 30px;
     width: 20%;
+    border: 10px;
 }
 
 #yourScoreBox {
     color: white;
+    font-size: 30px;
+    
 }
 #whiteCrystal {
     height: 150px;
