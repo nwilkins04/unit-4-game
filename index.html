@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crstyal Collector</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
 <body>
-    <div id="header"></div>
-    <div id="rules"></div>
-    <div id="randomNumber"></div>
-    <div container>
-        <div id="wins"></div>
-        <div id="loses"></div>
+    <div id="header">Crstyal Game</div>
+    <div class=row>
+        <div id="rules">How to play:
+            <ul id="list">
+                <li>You are given a target number to reach</li>
+                <li>Cliced each crystal and a number will display</li>
+            </ul>
+        </div>
+        <div id="randomNumberBox">
+            Number To Guess
+            <div id="randomNumber"></div>
+        </div>
+        <div container id="score">
+            <div id="winsText">
+                Wins:
+                <div id="wins"></div>
+            </div>
+            <div id="losesText">
+                Loses:
+                <div id="loses"></div>
+            </div>
+        </div>
+        <div id="yourScoreBox">
+            Your Score
+            <div id="user-Score"></div>
+        </div>
     </div>
     <div id="crystals">
         <img src="./assets/images/517597267-612x612.jpg" id="whiteCrystal">
@@ -20,5 +42,9 @@
         <img src="./assets/images/azurite-azuritemeaning.jpg" id="tealCrystal">
         <img src="./assets/images/Sunbeam_crystal_icon.png" id="orangeCrystal">
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
 </body>
 </html>

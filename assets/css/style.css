@@ -1,0 +1,47 @@
+body {
+    background-color: cyan;
+}
+
+#header {
+    background-color: orange;
+    font-size: 40px;
+    width: 20%;
+    text-align: center;
+}
+
+#rules {
+    background-color: coral;
+    width: 25%;
+    font-size: 25px;
+}
+
+#list {
+    font-size: 20px;
+}
+
+#randomNumberBox {
+    background-color: blue;
+    width: 20%;
+    color: white;
+}
+
+#score {
+    background-color: purple;
+    font-size: 30px;
+    width: 20%;
+}
+#whiteCrystal {
+    height: 150px;
+}
+
+#purpleCrystal {
+    height: 150px;
+}
+
+#tealCrystal {
+    height: 150px;
+}
+
+#orangeCrystal {
+    height: 150px;
+}
