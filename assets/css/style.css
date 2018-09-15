@@ -1,16 +1,17 @@
 body {
-    background-color: cyan;
+    background-image: url(../images/black-brick.jpeg);
 }
-
 #header {
-    background-color: orange;
-    font-size: 40px;
+    color: aliceblue;
+    font-family: fantasy;
+    font-size: 60px;
     width: 20%;
     text-align: center;
+    margin-left: 45%;
 }
 
 #rules {
-    background-color: coral;
+    background-color: aqua;
     width: 25%;
     font-size: 25px;
 }
@@ -29,6 +30,10 @@ body {
     background-color: purple;
     font-size: 30px;
     width: 20%;
+}
+
+#yourScoreBox {
+    color: white;
 }
 #whiteCrystal {
     height: 150px;
