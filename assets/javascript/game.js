@@ -3,7 +3,7 @@ console.log("game.js loaded")
 $(document).ready(function(){
 
 var counter = 0;
-var win = 0;
+var wins = 0;
 var loses = 0;
 
 //random number displayed to user between 19-120
@@ -68,14 +68,14 @@ $("#orangeCrystal").on("click", function() {
 var totalScore = function () {
     if(counter === targetNumber) {
         wins++
-        $("#wins").text(wins+1);
+        $("#wins").text(wins);
         alert("you win!");
         reset();
     }
 
     else if(counter >= targetNumber) {
         loses++
-        $("#loses").text(loses+1);
+        $("#loses").text(loses);
         alert("you lose!");
         reset();
     }
@@ -90,12 +90,15 @@ var reset = function() {
     targetNumber = Math.floor(Math.random() * 99) + 19;
     $("user-Score").text(counter);
     $("#randomNumber").text(targetNumber);
+    numberOptions1 = Math.floor(Math.random() * 12) +1;
+    numberOptions2 = Math.floor(Math.random() * 12) +1;
+    numberOptions3 = Math.floor(Math.random() * 12) +1;
+    numberOptions4 = Math.floor(Math.random() * 12) +1;
+    whiteCrystal.attr("data-whitecrystalvalue", numberOptions1);
+    purpleCrystal.attr("data-purplecrystalvalue", numberOptions2);
+    tealCrystal.attr("data-tealcrystalvalue", numberOptions3);
+    orangeCrystal.attr("data-orangecrystalvalue", numberOptions4);
 }
 
 //closes document on ready
 })
-
-    //when crystal clicked update players score counter
-//game restarts when player wins or loses
-    //when new game see new random number, crystals will have 4 new hidden values, user score and score counter will reset to 0
-//show number of wins and loses
